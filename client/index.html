@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="title"><h1>Fill the Form</h1></div>
+        <form id="main-form" action="/" method="POST" enctype="multipart/form-data">
+            <label for="fname">Full Name:</label><br>
+            <input type="text" name="fname" id="fname" required><br>
+
+            <label for="age">Age:</label><br>
+            <input type="text" name="age" id="age" maxlength="2" required><br>
+
+            <label for="city">City:</label><br>
+            <input type="text" name="city" id="city" required><br>
+
+            <label for="mobile">Mobile number:</label><br>
+            <input type="tel" name="mobile" id="mobile" maxlength="10" required><br>
+
+            <label for="mail">E-mail:</label><br>
+            <input type="email" name="mail" id="mail" required><br>
+
+            <label for="resume">Resume:</label>
+            <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required><br>
+
+            <label for="photo">Photo:</label><br>
+            <input type="file" name="photo" id="photo" accept="image/png" required>
+
+            <button name="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
